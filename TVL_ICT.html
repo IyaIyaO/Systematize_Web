@@ -4,6 +4,8 @@
 <title>Page Title</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 * {
   box-sizing: border-box;
@@ -19,7 +21,7 @@ body {
 .header {
   padding: 80px;
   text-align: center;
-  background: #0575e6;
+  background-color: hsl(226, 100%, 51%);;
   color: white;
 }
 
@@ -31,14 +33,54 @@ body {
 /* Style the top navigation bar */
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #333333;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: rgb(17, 72, 255);
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: #ffef5d
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: hsl(226, 100%, 51%);
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
 }
 
 /* Style the navigation bar links */
 .navbar a {
   float: left;
   display: block;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
@@ -111,7 +153,7 @@ body {
 </style>
 </head>
 <body>
-
+  
 <div class="header">
   <h1>TVL ICT</h1>
   <p> </p>
@@ -120,14 +162,27 @@ body {
 <div class="navbar">
   <a href="https://iyaiyao.github.io/Systematize_Web/Home.html">Home</a>
 
-  <a href="https://iyaiyao.github.io/Systematize_Web/WEB_2.html">About Systematize</a>
-
-  <a href="#">TVL ICT</a>
+  <div class="subnav">
+    
+    <button class="subnavbtn">TVL Strand<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#company">Company</a>
+      <a href="#team">Team</a>
+      <a href="#careers">Careers</a>
+    </div>
+  </div> 
+  
+  <a href="file:///C:/Users/marco/OneDrive/Desktop/tvl-ict/TVL_ICT.html">TVL ICT</a>
 
   <a href="#">TVL HE</a>
 
   <a href="#" class="right">Picture Gallery</a>
+
+    
+
 </div>
+
+
 
 <div class="row">
   <div class="side">
@@ -142,11 +197,38 @@ body {
     <div class="fakeimg" style="height:60px;">Image</div>
   </div>
   <div class="main">
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Dec 7, 2017</h5>
+    
+    <section class="videos">
+      <div style="width: 100%; text-align: center;">
+          <h2 class="video-header">ICT Activities</h2>
+      </div>
+      <div class="video-container">
+          <div class="video-item">
+              <video controls>
+                  <source src="CSS Tutorial Video.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
+              <p class="video-description">CSS COC3 Video.</p>
+          </div>
+
+          <div class="video-item">
+              <video controls>
+                  <source src="CSS Tutorial Video.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
+              <p class="video-description">Animation.</p>
+          </div>
+      </div>
+   </section>
+
+
     <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+    <p>Information technology and related skills are the subject of the ICT strand, one of the TVL track's strands.</p>
+
+    <p>The ICT strand equips students with knowledge and abilities in computer systems servicing, web design, programming,animation, and other related domains.</p>
+      
+    <p>The TVL track helps students by giving them practical vocational training, preparing them for work after high school, and equipping them with applicable skills for vocations in less time.</p>
     <br>
     <h2>TITLE HEADING</h2>
     <h5>Title description, Sep 2, 2017</h5>
