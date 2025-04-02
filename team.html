@@ -5,7 +5,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
 <style>
 * {
   box-sizing: border-box;
@@ -19,7 +22,7 @@ body {
 
 /* Header/logo Title */
 .header {
-  padding: 80px;
+  padding: 10px;
   text-align: center;
   background-color: hsl(226, 100%, 51%);
   color: white;
@@ -56,7 +59,7 @@ body {
   display: none;
   position: absolute;
   left: 0;
-  background-color: yellow;
+  background-color: hsl(226, 100%, 51%);
   width: 100%;
   z-index: 1;
 }
@@ -136,6 +139,52 @@ body {
   background: #ddd;
 }
 
+  
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+
+
+
+  
+
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row {   
@@ -155,7 +204,7 @@ body {
 <body>
   
 <div class="header">
-  <h1>Meet the Team</h1>
+  <h1>Meet the Team!</h1>
   <p> </p>
 </div>
 
@@ -167,9 +216,9 @@ body {
     
     <button class="subnavbtn">TVL ICT<i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="file:///C:/Users/CL%203%20-%20PC9/Downloads/TVL_ICT.html">ICT Activities</a>
-      <a href="file:///C:/Users/CL%203%20-%20PC9/Downloads/about_ict.html">About</a>
-      <a href="file:///C:/Users/CL%203%20-%20PC9/Downloads/team.html">Team</a>
+      <a href="https://iyaiyao.github.io/Systematize/TVL_ICT.html">ICT Activities</a>
+      <a href="https://iyaiyao.github.io/Systematize/about_ict.html">About</a>
+      <a href="https://iyaiyao.github.io/Systematize/team.html">Team</a>
     </div>
   </div> 
 
@@ -177,33 +226,60 @@ body {
     
     <button class="subnavbtn">TVL HE<i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="file:///C:/Users/CL%203%20-%20PC9/Downloads/TVL_ICT.html">HE Activities</a>
-      <a href="file:///C:/Users/CL%203%20-%20PC9/Downloads/about_ict.html">About</a>
-    </div>
-  </div>     
+      <a href="#">HE Activities</a>
+      <a href="#">About</a>
 
+    </div>
+  </div> 
     
 
 </div>
-
-
-
-
   
     
-  <div class="main">
-    <h2>About the Web Devs:</h2>
-    <h5>Iadje Marco and Romel Pili</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    <h3>More Pictures</h3>
-    <p>Lorem ipsum dolor sit ame.</p>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div>
+<div class="main">
+   <div class = "column">
+     <div class="card">
+      <img src="marco.jpg" alt="Iadje" style="width:100%">
+      <div class="container">
+        <h2>Iadje Marco</h2>
+        <p class="title">Web Developer and Animator</p>
+        <p>Grade 12 Student, TVL-ICT - Systematize.</p>
+        <p>marcoiadje@gmail.com</p>
+        
+      </div>
+    </div>
    </div>
-    
-    
+
+    <div class = "column">
+      <div class="card">
+      <img src="pili.jpg" alt="Romel" style="width:100%">
+      <div class="container">
+        <h2>Romel Pili Jr.</h2>
+        <p class="title">Web Developer and Animator</p>
+        <p>Grade 12 Student, TVL-ICT - Systematize.</p>
+        <p>romelpili41@gmail.com</p>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div class = "column">
+      <div class="card">
+      <img src="sirjack.jpg" alt="Sir Jack" style="width:100%">
+      <div class="container">
+        <h2>Jackson Salas.</h2>
+        <p class="title">Web Dev Adviser</p>
+        <p>romelpili41@gmail.com</p>
+        
+      </div>
+    </div>
+  </div>
+
+  
+      
+</div>
+
 
 
 <div class="footer">
