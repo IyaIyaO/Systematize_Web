@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Meet the Team</title>
+<title>Meet the Team!</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html {
+  box-sizing: border-box;
+}
 
-  
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 * {
   box-sizing: border-box;
@@ -133,49 +168,7 @@ body {
   padding: 20px;
 }
 
-
-  
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.container {
-  padding: 0 16px;
-}
-
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
-}
-
-	/* Footer */
+/* Footer */
 .footer {
   padding: 22px;
   text-align: center;
@@ -199,7 +192,6 @@ html {
   column-rule-color: lightblue; 
 }
 
-
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row {   
@@ -222,12 +214,10 @@ html {
   <div class="header">
 	<center>
 		<img src = "logo1.png" = height = 160 px = width = 250px>
-		<h3>Meet the Team!</h3>
 	</center>
   
 </div>
 </div>
-
 <div class="navbar">
   <a href="https://iyaiyao.github.io/Systematize_Web/Home.html">Home</a>
   <a href="https://iyaiyao.github.io/Systematize_Web/TVL_STRAND.html">TVL Strand</a>
@@ -251,11 +241,11 @@ html {
 
     </div>
   </div> 
-    
 
 </div>
-  
-    
+
+
+
 <div class="main">
    <div class = "column">
      <div class="card">
@@ -296,11 +286,8 @@ html {
     </div>
   </div>
 
-  
-      
+ 
 </div>
-
-
 
 <div class="footer">
 <p>Address: P.Burgos St. Barangay 3 Calamba, Philippines.</p>
