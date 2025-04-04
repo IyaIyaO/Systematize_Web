@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <style>
 * {
   box-sizing: border-box;
@@ -242,6 +243,88 @@ img {vertical-align: middle;}
   transition: background-color 0.6s ease;
 }
 
+
+
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: #000c85;
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+.footer .social a{
+    font-size: 24px;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px #000c85, 0 0 10px
+    #000c85;
+    transition: 0,3s ease;
+}
+.footer .social a:hover{
+    transform: scale(1.2)translateY(-10px);
+    color: gold;
+    border: 2px solid whitesmoke;
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 10px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: whitesmoke;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.footer ul li a:hover{
+    border-bottom: 3px solid gold;
+}
+.footer ul li{
+    display: inline-block;
+    padding: 15px;
+}
+
+.footer .info{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left:570px;
+    text-align: center;
+    margin-right: 570px;
+    color:white;
+    line-height: 2;
+    font-size: 13px;
+}
+
+.info i{
+    color:gold;
+}
+
+.info a {
+        text-decoration: none;
+        color: whitesmoke;
+        transition: color 0.3s ease;
+}  
+.info a:hover {
+        color: gold;
+}
+
+
+	
+
 .active {
   background-color: #717171;
 }
@@ -407,14 +490,25 @@ img {vertical-align: middle;}
 </div>
 
 
-<div class="footer">
-<p>Address: P.Burgos St. Barangay 3 Calamba, Philippines.</p>
-<p>Telephone Number:500 4545</p>
-<p>Cellphone No. 0961 074 5530</p>
-<p>Web Site: lcba.edu.ph</p>
-<p>Email: Info@lcba.edu.ph</p>
-<p>Facebook Page: Laguna College of Business and Arts</p>
-</div>
+<footer class="footer">
+
+            <div class="social">
+                <a href="https://www.facebook.com/LCBAofficial"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://www.tiktok.com/@lcba.official?lang=en"><i class='bx bxl-tiktok' ></i></a>
+                <a href="https://www.youtube.com/@lagunacollegeofbusinessand8939"><i class='bx bxl-youtube'></i></a>
+                <a href="https://www.instagram.com/lcbaofficial/"><i class='bx bxl-instagram-alt' ></i></a>
+            </div>
+        
+            <div class="info">
+                <h1>Contacts</h1>
+                <p><i class='bx bxs-phone' ></i> SMART: 0961-074-5530</p>
+                <p><i class='bx bx bx-envelope' ></i> info@lcba.edu.ph</p>
+                <p><i class='bx bxs-location-plus' ></i> P.Burgos St., Calamba City, Laguna, 4027</p>
+                <a href="https://cat453.github.io/stabilityweb2025/About%20Developers">About Developers?</a>
+            </div>
+            <br>
+            <p class="copyright">@ LCBA | All Right Reserved</p>
+        </footer>
 
 	<script>
 let slideIndex = 0;
